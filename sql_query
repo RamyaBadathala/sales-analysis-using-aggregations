@@ -1,0 +1,34 @@
+The dataset contains the following relevant columns:
+
+InvoiceNo: Could be used like an order_id
+
+InvoiceDate: Date and time of the order
+
+Quantity and UnitPrice: Can be used to calculate revenue
+
+No explicit amount column, but we can compute it as Quantity * UnitPrice
+  
+Let’s now create the MySQL to:
+
+1.Extract year and month from InvoiceDate
+
+2.Calculate total revenue
+
+3.Count distinct invoices (order volume)
+
+4.Group by year and month
+
+5.Sort by year and month
+
+SELECT
+    YEAR(STR_TO_DATE(InvoiceDate, '%m/%d/%Y %H:%i')) AS year,
+    MONTH(STR_TO_DATE(InvoiceDate, '%m/%d/%Y %H:%i')) AS month,
+    ROUND(SUM(Quantity * UnitPrice), 2) AS total_revenue,
+    COUNT(DISTINCT InvoiceNo) AS order_volume
+FROM
+    online_sales
+GROUP BY
+    YEAR(STR_TO_DATE(InvoiceDate, '%m/%d/%Y %H:%i')),
+    MONTH(STR_TO_DATE(InvoiceDate, '%m/%d/%Y %H:%i'))
+ORDER BY
+    year, month;
