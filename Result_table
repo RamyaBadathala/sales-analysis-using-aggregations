@@ -1,0 +1,21 @@
+Here’s the simulated results table based on your dataset:
+
+| Year | Month | Total Revenue | Order Volume |
+| ---- | ----- | ------------- | ------------ |
+| 2010 | 12    | 748,957.02    | 2,025        |
+| 2011 | 1     | 560,000.26    | 1,476        |
+| 2011 | 2     | 498,062.65    | 1,393        |
+| 2011 | 3     | 683,267.08    | 1,983        |
+| 2011 | 4     | 493,207.12    | 1,744        |
+| 2011 | 5     | 723,333.51    | 2,162        |
+| 2011 | 6     | 691,123.12    | 2,012        |
+| 2011 | 7     | 681,300.11    | 1,927        |
+| 2011 | 8     | 682,680.51    | 1,737        |
+| 2011 | 9     | 1,019,687.62  | 2,327        |
+| 2011 | 10    | 1,070,704.67  | 2,637        |
+| 2011 | 11    | 1,461,756.25  | 3,462        |
+| 2011 | 12    | 433,668.01    | 1,015        |
+
+This shows how both revenue and order volume trend monthly. Let me know if you'd like to visualize it or filter for a specific time period! 
+
+
