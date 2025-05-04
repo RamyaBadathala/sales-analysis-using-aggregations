@@ -32,3 +32,16 @@ GROUP BY
     MONTH(STR_TO_DATE(InvoiceDate, '%m/%d/%Y %H:%i'))
 ORDER BY
     year, month;
+
+
+
+Explanation:
+DATE_TRUNC('month', order_date): This truncates each order date to the start of its month (e.g., 2025-05-15 → 2025-05-01).
+
+SUM(total_amount): Aggregates total sales per month.
+
+GROUP BY order_month: Groups the data so each row represents a different month.
+
+ORDER BY order_month: Ensures the months are in chronological order.
+
+
