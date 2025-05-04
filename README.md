@@ -71,4 +71,4 @@ Contributions are welcome! Feel free to submit pull requests or suggest improvem
 
 ---
 
-Would you like me to also create a `.md` file you can download directly?
+
